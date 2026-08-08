@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Krishna Rajbanshi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-wider text-emerald-400">KRISHNA<span class="text-slate-100">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-emerald-400">Home</a>
+                <a href="about.html" class="text-emerald-400 font-semibold">About</a>
+                <a href="projects.html" class="hover:text-emerald-400">Projects</a>
+                <a href="contact.html" class="hover:text-emerald-400">Contact</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3 text-sm font-medium">
+            <a href="index.html" class="block hover:text-emerald-400">Home</a>
+            <a href="about.html" class="block text-emerald-400 font-semibold">About</a>
+            <a href="projects.html" class="block hover:text-emerald-400">Projects</a>
+            <a href="contact.html" class="block hover:text-emerald-400">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-28 pb-16 px-6 max-w-4xl mx-auto w-full flex-grow">
+        <div data-aos="fade-up">
+            <h1 class="text-3xl sm:text-4xl font-extrabold mb-6 border-l-4 border-emerald-500 pl-4">About Me</h1>
+            
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
+                I am an M.Sc. candidate in Environmental Science at the Central Department of Environmental Science (CDES), Tribhuvan University, Kirtipur, Nepal. My work combines field ecological monitoring with quantitative statistical analysis and remote sensing to understand hydrological systems and water resource challenges.
+            </p>
+
+            <h2 class="text-xl sm:text-2xl font-bold mt-10 mb-4 text-emerald-400">Work & Field Experience</h2>
+            <div class="space-y-6 text-slate-300 text-sm sm:text-base">
+                <div class="bg-slate-900 border border-slate-800 p-5 rounded-lg">
+                    <h3 class="font-bold text-slate-100 text-base">Technical Intern — ISET-Nepal</h3>
+                    <p class="text-xs text-emerald-400 mb-2">Research Support & Water Resources</p>
+                    <p class="text-slate-400 leading-relaxed">Supported research on socio-technical environmental challenges, data gathering, and analysis of environmental water projects.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-5 rounded-lg">
+                    <h3 class="font-bold text-slate-100 text-base">Field Data Collector — National Population Census</h3>
+                    <p class="text-xs text-emerald-400 mb-2">Field Surveys & Demographic Data</p>
+                    <p class="text-slate-400 leading-relaxed">Executed structured household surveys and data logging for national census records in Nepal.</p>
+                </div>
+            </div>
+
+            <h2 class="text-xl sm:text-2xl font-bold mt-10 mb-4 text-emerald-400">Leadership & Programs</h2>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm sm:text-base">
+                <li><strong>Green Fellows Cohort:</strong> Selected participant engaged in sustainable leadership and environmental initiatives.</li>
+                <li><strong>Aspire Leaders Program:</strong> Participant in global leadership development for university scholars.</li>
+            </ul>
+
+            <h2 class="text-xl sm:text-2xl font-bold mt-10 mb-4 text-emerald-400">Technical Toolkit</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs sm:text-sm text-slate-300">
+                <div class="bg-slate-900 p-3 rounded border border-slate-800">ArcMap & QGIS</div>
+                <div class="bg-slate-900 p-3 rounded border border-slate-800">Google Earth Engine</div>
+                <div class="bg-slate-900 p-3 rounded border border-slate-800">NDWI Analysis</div>
+                <div class="bg-slate-900 p-3 rounded border border-slate-800">Regression Modeling</div>
+                <div class="bg-slate-900 p-3 rounded border border-slate-800">Ecological Indices</div>
+                <div class="bg-slate-900 p-3 rounded border border-slate-800">WordPress / Web Tools</div>
+            </div>
+
+            <div class="mt-10">
+                <a href="docs/CV.pdf" target="_blank" class="px-6 py-3 bg-emerald-500 text-slate-950 font-semibold rounded-lg hover:bg-emerald-400 transition-all inline-block text-sm">
+                    View Complete CV (PDF)
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-6 text-center text-slate-500 text-xs sm:text-sm mt-auto">
+        <p>&copy; 2026 Krishna Rajbanshi. Hosted on GitHub Pages.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+        document.getElementById('menu-btn').onclick = () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        };
+    </script>
+</body>
+</html>

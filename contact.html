@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Krishna Rajbanshi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-wider text-emerald-400">KRISHNA<span class="text-slate-100">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-emerald-400">Home</a>
+                <a href="about.html" class="hover:text-emerald-400">About</a>
+                <a href="projects.html" class="hover:text-emerald-400">Projects</a>
+                <a href="contact.html" class="text-emerald-400 font-semibold">Contact</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3 text-sm font-medium">
+            <a href="index.html" class="block hover:text-emerald-400">Home</a>
+            <a href="about.html" class="block hover:text-emerald-400">About</a>
+            <a href="projects.html" class="block hover:text-emerald-400">Projects</a>
+            <a href="contact.html" class="block text-emerald-400 font-semibold">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="pt-28 pb-16 px-6 max-w-xl mx-auto w-full flex-grow">
+        <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 border-l-4 border-emerald-500 pl-4">Get In Touch</h1>
+        <p class="text-slate-400 mb-8 text-sm sm:text-base">Feel free to reach out for research collaboration, academic inquiries, or environmental data projects.</p>
+
+        <!-- Web3Forms Form -->
+        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5 bg-slate-900 p-6 sm:p-8 rounded-xl border border-slate-800">
+            <!-- Get your free access key from https://web3forms.com and paste it below -->
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+
+            <div>
+                <label class="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Your Name</label>
+                <input type="text" name="name" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 text-sm focus:outline-none focus:border-emerald-500">
+            </div>
+
+            <div>
+                <label class="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Your Email</label>
+                <input type="email" name="email" required placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 text-sm focus:outline-none focus:border-emerald-500">
+            </div>
+
+            <div>
+                <label class="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Message</label>
+                <textarea name="message" rows="5" required placeholder="Write your message here..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 text-sm focus:outline-none focus:border-emerald-500"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-emerald-500 text-slate-950 font-semibold py-3 rounded-lg hover:bg-emerald-400 transition-colors text-sm">
+                Send Message
+            </button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-6 text-center text-slate-500 text-xs sm:text-sm mt-auto">
+        <p>&copy; 2026 Krishna Rajbanshi. Hosted on GitHub Pages.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').onclick = () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        };
+    </script>
+</body>
+</html>

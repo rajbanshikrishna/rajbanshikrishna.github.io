@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Krishna Rajbanshi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-wider text-emerald-400">KRISHNA<span class="text-slate-100">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-emerald-400">Home</a>
+                <a href="about.html" class="hover:text-emerald-400">About</a>
+                <a href="projects.html" class="text-emerald-400 font-semibold">Projects</a>
+                <a href="contact.html" class="hover:text-emerald-400">Contact</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3 text-sm font-medium">
+            <a href="index.html" class="block hover:text-emerald-400">Home</a>
+            <a href="about.html" class="block hover:text-emerald-400">About</a>
+            <a href="projects.html" class="block text-emerald-400 font-semibold">Projects</a>
+            <a href="contact.html" class="block hover:text-emerald-400">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <main class="pt-28 pb-16 px-6 max-w-6xl mx-auto w-full flex-grow">
+        <div class="mb-12" data-aos="fade-right">
+            <h1 class="text-3xl sm:text-4xl font-extrabold border-l-4 border-emerald-500 pl-4">Research & Academic Projects</h1>
+            <p class="text-slate-400 mt-2 text-sm sm:text-base">Comprehensive showcase of my academic studies, field analyses, and geospatial modeling.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Project 1 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-emerald-500/50 transition-all" data-aos="fade-up">
+                <div class="h-48 bg-slate-800 relative flex items-center justify-center">
+                    <img src="img/terai-map.jpg" alt="Terai Irrigation Study" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/10b981?text=Terai+Irrigation+Study';">
+                    <span class="absolute top-3 right-3 text-xs font-mono px-2.5 py-1 bg-slate-950/80 text-emerald-400 rounded-full border border-slate-700">GIS & Climate</span>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Climate Variability & Irrigation in Terai Region</h2>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">Secondary data synthesis and hydrological modeling assessing climate variability impacts on irrigation water availability in southern Nepal.</p>
+                    <div class="text-xs text-slate-500 font-mono">• Secondary Data Synthesis • Hydrological Modeling</div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-emerald-500/50 transition-all" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 bg-slate-800 relative flex items-center justify-center">
+                    <img src="img/taudaha-lake.jpg" alt="Taudaha Lake Study" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/3b82f6?text=Taudaha+Lake+Limnology';">
+                    <span class="absolute top-3 right-3 text-xs font-mono px-2.5 py-1 bg-slate-950/80 text-blue-400 rounded-full border border-slate-700">Limnology</span>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Physicochemical Dynamics in Taudaha Lake</h2>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">Field study and chemical tracking of free CO₂ trends, physicochemical drivers, and aquatic ecosystem factors affecting fish mortality.</p>
+                    <div class="text-xs text-slate-500 font-mono">• Water Sampling • Physicochemical Analysis</div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-emerald-500/50 transition-all" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-48 bg-slate-800 relative flex items-center justify-center">
+                    <img src="img/surface-water.jpg" alt="Heavy Metal Risk Assessment" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/f59e0b?text=Heavy+Metal+Risk+Study';">
+                    <span class="absolute top-3 right-3 text-xs font-mono px-2.5 py-1 bg-slate-950/80 text-amber-400 rounded-full border border-slate-700">Ecotoxicology</span>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Heavy Metal Risk in Nepalese Surface Waters</h2>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">Comprehensive review and risk assessment of heavy metal contamination parameters across Nepalese rivers and freshwater basins.</p>
+                    <div class="text-xs text-slate-500 font-mono">• Pollution Risk Assessment • Environmental Standards</div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-emerald-500/50 transition-all" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-48 bg-slate-800 relative flex items-center justify-center">
+                    <img src="img/waste-management.jpg" alt="Solid Waste Management Study" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/10b981?text=Kathmandu+vs+Pokhara+Waste+Study';">
+                    <span class="absolute top-3 right-3 text-xs font-mono px-2.5 py-1 bg-slate-950/80 text-emerald-400 rounded-full border border-slate-700">Urban Environment</span>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Comparative Solid Waste Analysis: KMC vs. PMC</h2>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">Comparative trend analysis analyzing waste generation rates and collection efficiency in Kathmandu and Pokhara Metropolitan Cities.</p>
+                    <div class="text-xs text-slate-500 font-mono">• Statistical Analysis • Trend Comparison</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-6 text-center text-slate-500 text-xs sm:text-sm mt-auto">
+        <p>&copy; 2026 Krishna Rajbanshi. Hosted on GitHub Pages.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+        document.getElementById('menu-btn').onclick = () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        };
+    </script>
+</body>
+</html>
